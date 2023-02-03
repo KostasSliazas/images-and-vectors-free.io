@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gall7.min.css">
+  <script src="js/gall7.min.js"></script>
+  <script> IGConfig = {   
+    showButtons: 0,    
+    }    
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+      <svg id="menu" viewBox="0 0 48 48">
+        <path d="M8 14h32zm0 9h32zm0 10h32z" />
+      </svg>
+      <ul>
+        <li><a href="index.html">Apie</a></li>
+        <li><a href="#item6">paslaugos</a></li>
+        <li><a href="about.html">kontaktai</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="box">
+    <img src="img/sssss.png" alt="">
+    <img src="img/untitled.webp" alt="" srcset="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+      vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+        vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+          vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+            vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+              vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+                vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+                <p id="item6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+                  vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+                    vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam impedit cumque velit voluptas. Hic
+                      vitae quo dicta dolorum quod incidunt ipsum veniam sit impedit maxime nulla, accusamus eligendi quos?</p>
+                                                                          </main>
+  <footer></footer>
+  <script>
+
+    document.addEventListener('click', function (e) {
+      if (e.target.id === "menu" && e.target.getAttribute('class') !== 'active')
+        return e.target.setAttribute('class', 'active')
+        return document.getElementById('menu').removeAttribute('class')
+    })
+  </script>
+</body>
+
+</html>
