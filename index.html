@@ -8,7 +8,8 @@
   <title>Menu</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gall7.min.css">
-  <script src="js/gall7.min.js"></script>
+  <script async src="js/gall7.min.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -78,13 +79,6 @@
   </div>   
   </main>
   <footer></footer>
-  <script>
-    document.addEventListener('click', function (e) {
-      if (e.target.id === "menu" && e.target.getAttribute('class') !== 'active')
-        return e.target.setAttribute('class', 'active')
-      return document.getElementById('menu').removeAttribute('class')
-    })
-  </script>
 </body>
 
 </html>
