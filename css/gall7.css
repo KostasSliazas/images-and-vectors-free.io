@@ -19,7 +19,7 @@
 #imag7 .bor,
 #imag7 .bra::after,
 #imag7 .brb::before {
-  border: 2px solid #fff
+  border: 1px solid #fff
 }
 
 #imag7 button::after,
@@ -27,8 +27,8 @@
   content: ""
 }
 #imag7 button {
-  height: 48px;
-  width: 48px;
+  height: 49px;
+  width: 49px;
   border-radius: 50%;
   border: 0;
   background:rgba(77, 77, 77, .2); 
@@ -110,8 +110,8 @@
 
 #imag7 #ilef7::after,
 #imag7 #irig7::after {
-  padding: 9px;
-  top: 14px
+  padding: 8px;
+  top: 16px
 }
 
 #imag7 .trn,
@@ -133,13 +133,13 @@
 }
 
 #imag7 #ilef7::after {
-  border-width: 2px 0 0 2px;
+  border-width: 1px 0 0 1px;
   left: 14px
 }
 
 #imag7 #irig7::after {
   right: 14px;
-  border-width: 2px 2px 0 0
+  border-width: 1px 1px 0 0
 }
 
 #imag7 #left7:hover #ilef7::after {
@@ -152,10 +152,10 @@
 
 #imag7 #clos7::after,
 #imag7 #clos7::before {
-  border-width: 0 0 0 2px;
-  height: 30px;
-  left: 23px;
-  top: 10px
+  border-width: 0 0 0 1px;
+  height: 31px;
+  left: 24px;
+  top: 9px
 }
 
 #imag7 #play7::before,
@@ -175,16 +175,16 @@
 }
 
 #imag7 #down7 {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 1px 1px;
   top: 27px;
   height: 6px;
-  width: 24px;
+  width: 23px;
   border-top: 0
 }
 
 #imag7 #play7::before {
   transition: .2s border-radius;
-  top: 12px
+  top: 13px
 }
 
 #imag7 #play7.acts7::before {
@@ -194,30 +194,30 @@
 #imag7 #play7::after {
   border-color: transparent #fff;
   border-width: 5px 0 5px 12px;
-  left: 19px;
-  top: 19px;
+  left: 20px;
+  top: 20px;
   width: 10px
 }
 
 #imag7 #play7.acts7::after {
-  border-width: 0 2px;
+  border-width: 0 1px;
   padding-top: 10px
 }
 
 #imag7 #wdow7::after {
-  border-width: 0 0 2px 2px;
+  border-width: 0 0 1px 1px;
   bottom: 21px;
-  height: 12px;
-  left: 18px;
-  width: 12px
+  height: 11px;
+  left: 19px;
+  width: 11px
 }
 
 #imag7 #wdow7::before {
   background: #fff;
-  height: 18px;
-  left: 23px;
+  height: 20px;
+  left: 24px;
   top: 9px;
-  width: 2px
+  width: 1px
 }
 #imag7,
 #imag7 .top {
@@ -237,7 +237,7 @@
 }
 #imag7 #down7,
 #imag7 #play7::before {
-  left: 12px
+  left: 13px
 }
 #imag7 #clos7,
 #imag7 #irig7,
