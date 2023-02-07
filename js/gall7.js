@@ -291,8 +291,8 @@
     if (!IG.isActive || e.isComposing || e.key === 229) return
     // event key or target id
     const ev = e.key || e.target.id
-    if (!k[ev]) return IG.clear()
-    k[ev]()
+    if (k[ev]) k[ev]() 
+    else IG.clear()
     e.preventDefault()
     e.stopImmediatePropagation()
   }
