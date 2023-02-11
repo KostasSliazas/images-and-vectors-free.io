@@ -6,8 +6,7 @@ html{
 }
 html,
 body {
-  font: 200 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-  height: 100%;
+  font: 200 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -61,6 +60,8 @@ main {
   margin: 0 auto;
   background-color: #fffffee3;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .header{
 display: none
