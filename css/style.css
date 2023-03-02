@@ -59,9 +59,7 @@ img {
 main {
   margin: 0 auto;
   background-color: #fffffee3;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
 }
 .header{
 display: none
@@ -73,9 +71,6 @@ display: none
   margin: 0 .5em;
 }
 
-.box>div {
-
-}
 
 .logo {
   display: block;
@@ -165,6 +160,7 @@ nav ul li a:hover {
   overflow-y: scroll;
   overscroll-behavior: contain;
   top: 0;
+  z-index: 1;
 }
 #menu {
   -webkit-appearance: none;
@@ -242,3 +238,4 @@ text-align: center;
     max-width: 900px;
   }
 }
+.images-container{margin:0 auto;padding:0 .25em;user-select:none;max-width:1024px}.images-container ul{list-style:none;font-size:0;padding:0;margin:0 auto;display:flex;flex-wrap:wrap}.images-container li{position:relative;margin:.25em;font-size:16px;height:168px;overflow:hidden;background:#eee;color:#fff;flex:1 1 240px}.images-container img{cursor:pointer;object-position:center;height:100%;width:100%}
