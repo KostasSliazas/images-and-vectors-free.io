@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+}
+html{
+  background: url(../img/i2.svg) no-repeat 0 0/cover fixed;
+}
+html,
+body {
+  font: 200 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 1.44em;
+	line-height: 1.04em;
+	padding-top: 0.130em;
+	margin-bottom: 0.913em;
+}
+
+h2 {
+	font-size: 1.19em;
+	line-height: 1.26em;
+	padding-top: 0.211em;
+	margin-bottom: 1.05em;
+}
+
+h3 {
+	font-size: 1.00em;
+	line-height: 1.50em;
+	padding-top: 0.375em;
+	margin-bottom: 1.13em;
+}
+
+h4 {
+	font-size: 1.00em;
+	line-height: 1.50em;
+	padding-top: 0.375em;
+	margin-bottom: 1.13em;
+}
+
+p {
+	font-size: 1.00em;
+	line-height: 1.50em;
+	padding-top: 0.375em;
+	margin-bottom: 1.13em;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+main {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #fffffee3;
+
+}
+.header{
+display: none
+}
+.header h1{
+ margin: 0;
+}
+.box {
+  margin: 0 .5em;
+}
+
+
+.logo {
+  display: block;
+  position: absolute;
+  padding: 6px;
+  top: 0;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+header {
+  background: #7e99c7;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+  width: 100%;
+}
+
+nav {
+  color: #fff;
+  font-size: 0;
+  user-select: none;
+}
+
+nav ul {
+  border-bottom: 1px solid currentColor;
+  border-top: 1px solid currentColor;
+  display: none;
+  height: 100%;
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 100%;
+}
+
+.active nav ul {
+  display: block;
+}
+
+nav ul li {
+  display: block;
+  margin: 0 24px;
+  position: relative;
+  text-align: left;
+  transition: all .2s .02s;
+}
+
+nav ul li a {
+  color: currentColor;
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 2px;
+  padding: 0 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li:first-child::before,
+nav ul li::after {
+  border-bottom: 1px solid currentColor;
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  height: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+
+nav ul li:first-child::before {
+  top: 0;
+  height: 0;
+}
+
+nav ul li a:hover {
+  transition: inherit;
+  color: #fff;
+}
+.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  top: 0;
+  z-index: 1;
+}
+#menu {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  height: 36px;
+  padding: 6px;
+  shape-rendering: optimizespeed;
+  width: 48px;
+}
+#menu:focus {
+  outline: 0;
+}
+
+#menu path {
+  pointer-events: none;
+  stroke-dasharray: 16;
+  stroke-dashoffset: -16;
+  stroke: currentColor;
+  transition: stroke-dashoffset .2s;
+}
+
+.active nav #menu path {
+  d: path('m12 36 23-23zm0-23 23 23z');
+  stroke-dasharray: 16;
+  stroke-dashoffset: -2;
+}
+
+@media (min-width: 768px) {
+  .active{
+    height: auto;
+  }
+  .header{
+  height: 100px;
+  width: 100%;
+color: #fff;
+display: flex;
+place-content: center;
+place-items: center;
+text-align: center;
+}
+  .box {margin:0}
+  .logo,
+  nav ul li:first-child::before,
+  #menu {
+    display: none;
+  }
+
+  nav ul li::after {
+    bottom: 10px;
+    left: 0;
+    transform: scale3d(0, 1, 1);
+    width: 100%;
+  }
+
+  nav ul li:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: inherit;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+
+  }
+
+  nav ul {
+    border: 0;
+    display: block;
+    height: auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+  }
+}
+.images-container{margin:0 auto;padding:0 .25em;user-select:none;max-width:1024px}.images-container ul{list-style:none;font-size:0;padding:0;margin:0 auto;display:flex;flex-wrap:wrap}.images-container li{position:relative;margin:.25em;font-size:16px;height:168px;overflow:hidden;background:#eee;color:#fff;flex:1 1 240px}.images-container img{cursor:pointer;object-position:center;height:100%;width:100%}
