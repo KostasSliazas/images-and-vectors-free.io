@@ -1,55 +1,61 @@
 * {
   margin: 0;
 }
-html{
+
+html {
   background: url(../img/i2.svg) no-repeat 0 0/cover fixed;
 }
+
 html,
 body {
   font: 200 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
-	font-weight: normal;
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
 }
 
 h1 {
-	font-size: 1.44em;
-	line-height: 1.04em;
-	padding-top: 0.130em;
-	margin-bottom: 0.913em;
+  font-size: 1.44em;
+  line-height: 1.04em;
+  padding-top: 0.130em;
+  margin-bottom: 0.913em;
 }
 
 h2 {
-	font-size: 1.19em;
-	line-height: 1.26em;
-	padding-top: 0.211em;
-	margin-bottom: 1.05em;
+  font-size: 1.19em;
+  line-height: 1.26em;
+  padding-top: 0.211em;
+  margin-bottom: 1.05em;
 }
 
 h3 {
-	font-size: 1.00em;
-	line-height: 1.50em;
-	padding-top: 0.375em;
-	margin-bottom: 1.13em;
+  font-size: 1.00em;
+  line-height: 1.50em;
+  padding-top: 0.375em;
+  margin-bottom: 1.13em;
 }
 
 h4 {
-	font-size: 1.00em;
-	line-height: 1.50em;
-	padding-top: 0.375em;
-	margin-bottom: 1.13em;
+  font-size: 1.00em;
+  line-height: 1.50em;
+  padding-top: 0.375em;
+  margin-bottom: 1.13em;
 }
 
 p {
-	font-size: 1.00em;
-	line-height: 1.50em;
-	padding-top: 0.375em;
-	margin-bottom: 1.13em;
+  font-size: 1.00em;
+  line-height: 1.50em;
+  padding-top: 0.375em;
+  margin-bottom: 1.13em;
 }
 
-
+a {display: inline-block;}
 img {
   max-width: 100%;
   max-height: 100%;
@@ -62,16 +68,47 @@ main {
   background-color: #fffffee3;
 
 }
-.header{
-display: none
+footer {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
 }
-.header h1{
- margin: 0;
-}
-.box {
-  margin: 0 .5em;
+.header {
+  display: none
 }
 
+.header h1 {
+  margin: 0;
+}
+
+.box {
+  padding: 1em;
+  margin: 0 .5em;
+}
+.gg-mail,
+.gg-mail::after {
+ display: block;
+ box-sizing: border-box;
+ height: 14px;
+ border: 2px solid
+}
+
+.gg-mail {
+ overflow: hidden;
+ position: relative;
+ width: 18px;
+ border-radius: 2px
+}
+
+.gg-mail::after {
+ content: "";
+ position: absolute;
+ border-radius: 3px;
+ width: 14px;
+ transform: rotate(-45deg);
+ bottom: 3px;
+ left: 0
+} 
 
 .logo {
   display: block;
@@ -154,6 +191,7 @@ nav ul li a:hover {
   transition: inherit;
   color: #fff;
 }
+
 .active {
   position: fixed;
   width: 100%;
@@ -163,6 +201,7 @@ nav ul li a:hover {
   top: 0;
   z-index: 1;
 }
+
 #menu {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -173,6 +212,7 @@ nav ul li a:hover {
   shape-rendering: optimizespeed;
   width: 48px;
 }
+
 #menu:focus {
   outline: 0;
 }
@@ -192,19 +232,25 @@ nav ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  .active{
+  .active {
     height: auto;
   }
-  .header{
-  height: 100px;
-  width: 100%;
-color: #fff;
-display: flex;
-place-content: center;
-place-items: center;
-text-align: center;
-}
-  .box {margin:0}
+
+  .header {
+    height: 100px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+  }
+
+  .box {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   .logo,
   nav ul li:first-child::before,
   #menu {
@@ -239,4 +285,37 @@ text-align: center;
     max-width: 900px;
   }
 }
-.images-container{margin:0 auto;padding:0 .25em;user-select:none;max-width:1024px}.images-container ul{list-style:none;font-size:0;padding:0;margin:0 auto;display:flex;flex-wrap:wrap}.images-container li{position:relative;margin:.25em;font-size:16px;height:168px;overflow:hidden;background:#eee;color:#fff;flex:1 1 240px}.images-container img{cursor:pointer;object-position:center;height:100%;width:100%}
+
+.images-container {
+  margin: 0 auto;
+  padding: 0 .25em;
+  user-select: none;
+  max-width: 1024px
+}
+
+.images-container ul {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.images-container li {
+  position: relative;
+  margin: .25em;
+  font-size: 16px;
+  height: 168px;
+  overflow: hidden;
+  background: #eee;
+  color: #fff;
+  flex: 1 1 240px
+}
+
+.images-container img {
+  cursor: pointer;
+  object-position: center;
+  height: 100%;
+  width: 100%
+}
