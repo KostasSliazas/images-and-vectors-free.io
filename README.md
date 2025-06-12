@@ -8,8 +8,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/images-and-vectors-free.io)](https://github.com/KostasSliazas/images-and-vectors-free.io/commits)
 
 
-A lightweight, responsive web gallery showcasing free SVGs, wallpapers, and real-world photos. Created and curated by [Kostas Šliažas](https://github.com/KostasSliazas), this project is ideal for designers, educators, developers, and anyone looking for high-quality visual assets.
-
+Free SVGs, wallpapers, and real-world photos. 
 ## Live Demo
 
 Visit the gallery online:  
