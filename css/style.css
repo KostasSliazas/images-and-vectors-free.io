@@ -2,15 +2,13 @@
   margin: 0;
 }
 
-html {
-  background: url(../img/i2.svg) no-repeat 0 0/cover fixed;
-}
-
 html,
 body {
-  font: 200 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font: 300 16px/1.5 Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
+  background: #111;
+  color: #aaa;
 }
 
 h1,
@@ -55,7 +53,6 @@ p {
   margin-bottom: 1.13em;
 }
 
-a {display: inline-block;}
 img {
   max-width: 100%;
   max-height: 100%;
@@ -65,50 +62,59 @@ img {
 main {
   margin: 0 auto;
   min-height: 100vh;
-  background-color: #fffffee3;
+  background: #4d4d4de3;
 
 }
+
 footer {
   margin: 0 auto;
-  max-width: 900px;
   text-align: center;
+  min-height: 120px;
+  display: flex;
+  background: #111;
+  text-indent: 37px;
+  direction: rtl;
 }
+
 .header {
   display: none
 }
 
 .header h1 {
   margin: 0;
+  font-size: 12px;
+  padding: 0 2em;
 }
 
 .box {
   padding: 1em;
   margin: 0 .5em;
 }
+
 .gg-mail,
 .gg-mail::after {
- display: block;
- box-sizing: border-box;
- height: 14px;
- border: 2px solid
+  display: block;
+  box-sizing: border-box;
+  height: 14px;
+  border: 2px solid
 }
 
 .gg-mail {
- overflow: hidden;
- position: relative;
- width: 18px;
- border-radius: 2px
+  overflow: hidden;
+  position: relative;
+  width: 18px;
+  border-radius: 2px
 }
 
 .gg-mail::after {
- content: "";
- position: absolute;
- border-radius: 3px;
- width: 14px;
- transform: rotate(-45deg);
- bottom: 3px;
- left: 0
-} 
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 14px;
+  transform: rotate(-45deg);
+  bottom: 3px;
+  left: 0
+}
 
 .logo {
   display: block;
@@ -124,7 +130,7 @@ footer {
 
 header {
   background: #7e99c7;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #949fdf;
   text-align: right;
   width: 100%;
 }
@@ -237,13 +243,15 @@ nav ul li a:hover {
   }
 
   .header {
-    height: 100px;
+    height: 2em;
     width: 100%;
-    color: #fff;
+    color: #e1e0e0;
     display: flex;
-    place-content: center;
+    place-content: end;
     place-items: center;
-    text-align: center;
+    background: #9a98a8;
+    background: repeating-linear-gradient(-25deg, rgb(58, 69, 75) 0px, rgb(58, 69, 75) 24px, rgb(77, 69, 100) 24px, rgb(77, 69, 100) 48px, rgb(80, 91, 114) 48px, rgb(80, 91, 114) 72px, rgb(85, 111, 138) 72px, rgb(85, 111, 138) 96px, rgb(98, 124, 141) 96px, rgb(98, 124, 141) 120px, rgb(98, 127, 165) 120px, rgb(98, 127, 165) 144px, rgb(99, 146, 176) 144px, rgb(99, 146, 176) 168px, rgb(109, 149, 189) 168px, rgb(109, 149, 189) 192px, rgb(133, 167, 201) 192px, rgb(133, 167, 201) 216px, rgb(144, 192, 216) 216px, rgb(144, 192, 216) 240px, rgb(162, 194, 238) 240px, rgb(162, 194, 238) 264px, rgb(144, 192, 216) 264px, rgb(144, 192, 216) 288px, rgb(133, 167, 201) 288px, rgb(133, 167, 201) 312px, rgb(109, 149, 189) 312px, rgb(109, 149, 189) 336px, rgb(99, 146, 176) 336px, rgb(99, 146, 176) 360px, rgb(98, 127, 165) 360px, rgb(98, 127, 165) 384px, rgb(98, 124, 141) 384px, rgb(98, 124, 141) 408px, rgb(85, 111, 138) 408px, rgb(85, 111, 138) 432px, rgb(80, 91, 114) 432px, rgb(80, 91, 114) 456px, rgb(77, 69, 100) 456px, rgb(77, 69, 100) 480px) fixed;
+    border-bottom: 1px solid #949fdf;
   }
 
   .box {
@@ -299,7 +307,7 @@ nav ul li a:hover {
   padding: 0;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .images-container li {
@@ -308,14 +316,22 @@ nav ul li a:hover {
   font-size: 16px;
   height: 168px;
   overflow: hidden;
-  background: #eee;
+  background: #000;
   color: #fff;
-  flex: 1 1 240px
+  border: 1px solid #aaa;
+  transition: .1s .3s ease-in-out;
+  flex: 1 1 240px;
+  perspective: 300px;
+}
+
+.images-container img:hover {
+  transform: translateZ(7px);
 }
 
 .images-container img {
   cursor: pointer;
   object-position: center;
   height: 100%;
-  width: 100%
+  width: 100%;
+  transform-style: preserve-3d;
 }
